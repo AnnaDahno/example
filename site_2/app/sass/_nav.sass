@@ -1,0 +1,62 @@
+.main
+	display: flex
+	color: $color
+	width: auto
+	height: auto
+.wrap_menu
+	display: flex
+	align-self: center
+	width: 20%
+	height: 100%
+	background-color: #5B166F
+	position: fixed
+	top: 0px	
+
+.wrap_content
+	width: auto
+	margin-left: 20%
+	background-color: #4259BA
+
+.menu 
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap 
+	align-self: center
+	justify-content: flex-end
+	width: 100%
+	.item
+		font-size: 15px
+		padding: 20px
+		border-bottom: 1px solid white
+		opacity: 0.5
+		transition: all 1s 
+		width: 90%
+		margin: auto
+		align-items: center
+.item:hover
+	opacity: 1
+
+
+
+@media screen and (max-width: 970px)
+	.wrap_content
+		margin: 0px
+	.wrap_menu
+		width: 100%
+		height: auto
+		background-color: #5B166F
+		z-index: 1000	
+	.menu 
+		margin: 0px
+		.item
+			width: auto
+			border: none
+@media screen and (max-width: 640px)
+	.wrap_menu
+		display: none
+	.wrap_content
+		width: 100%
+		margin: 0px
+
+
+	
